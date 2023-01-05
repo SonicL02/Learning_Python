@@ -1,0 +1,34 @@
+import numpy as np
+num = int(input("введите число"))
+if num % 2 ==0:
+    print("четное число", num)
+else:
+    print("нечетное число")
+letter = input("напишите букву")
+if letter == "a" or letter == "e" or letter == "i" or letter == "o" or letter == "u":
+    print("гласная")
+elif letter == "y":
+    print("гласная и согласная")
+else:
+    print("согласная")
+
+mas = [23, 'Hello', True]
+print(mas[0])
+
+num = int(input('введите число'))
+data = []
+while num != 0:
+    data.append(num)
+    num = int(input())
+data.sort()
+print(data)
+
+word = input()
+data = []
+while word != '':
+    if word not in data:
+        data.append(word)
+    word = input()
+print(data)
+for item in data:
+    print(item)
