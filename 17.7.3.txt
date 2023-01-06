@@ -1,0 +1,8 @@
+per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
+L = list(per_cent.values())
+S = float(input("Введите сумму"))
+D = []
+for i in L:
+    D.append((i * S)/100)
+print("deposit =", D)
+print("Максимальная сумма, которую вы можете заработать -", max(D))
