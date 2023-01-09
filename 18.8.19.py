@@ -7,7 +7,7 @@ for x in range(1, N_Ticket + 1):
     Age = int(input(f"Введите возраст {x} посетителя: "))
     if Age < 18:
         ALL_Price += Price[0]
-    if 18 <= Age < 25:
+    if 18 <= Age <= 25:
         ALL_Price += Price[1]
     if Age > 25:
         ALL_Price += Price[2]
